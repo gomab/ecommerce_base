@@ -1,4 +1,5 @@
 import 'package:diaspay_base/features/authentication/screens/signup/signup.dart';
+import 'package:diaspay_base/features/authentication/screens/signup/verify_email.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -61,7 +62,8 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    //onPressed: () {},
+                    onPressed: () => Get.to(() => const VerifyEmailScreen()),
                     child: const Text(TTexts.signIn))),
             const SizedBox(height: TSizes.spaceBtwItems),
 
