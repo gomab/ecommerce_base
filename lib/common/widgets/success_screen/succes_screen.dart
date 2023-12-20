@@ -10,7 +10,12 @@ import '../../../utils/constants/text_strings.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.image, required this.title, required this.subTitle, required this.onPressed});
+  const SuccessScreen(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.subTitle,
+      required this.onPressed});
 
   final String image, title, subTitle;
   final VoidCallback onPressed;
@@ -45,7 +50,8 @@ class SuccessScreen extends StatelessWidget {
                   child: ElevatedButton(
                       onPressed: onPressed,
                       child: const Text(TTexts.tContinue))),
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems
+              ),
             ],
           ),
         ),

@@ -1,3 +1,4 @@
+import 'package:diaspay_base/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:diaspay_base/features/authentication/screens/signup/signup.dart';
 import 'package:diaspay_base/features/authentication/screens/signup/verify_email.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +53,7 @@ class TLoginForm extends StatelessWidget {
 
                 /// Forget Password
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const ForgetPassword()),
                     child: const Text(TTexts.forgetPassword)),
               ],
             ),
