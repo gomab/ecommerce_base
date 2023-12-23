@@ -1,6 +1,6 @@
 import 'package:diaspay_base/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:diaspay_base/features/authentication/screens/signup/signup.dart';
-import 'package:diaspay_base/features/authentication/screens/signup/verify_email.dart';
+import 'package:diaspay_base/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -64,7 +64,8 @@ class TLoginForm extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     //onPressed: () {},
-                    onPressed: () => Get.to(() => const VerifyEmailScreen()),
+                    //onPressed: () => Get.to(() => const VerifyEmailScreen()),
+                    onPressed: () => Get.to(() => const NavigationMenu()),
                     child: const Text(TTexts.signIn))),
             const SizedBox(height: TSizes.spaceBtwItems),
 
